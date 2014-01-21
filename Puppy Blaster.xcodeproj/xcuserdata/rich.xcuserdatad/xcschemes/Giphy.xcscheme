@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9B8181A7188DCE76001A4017"
                BuildableName = "Giphy.app"
-               BlueprintName = "Giphy"
-               ReferencedContainer = "container:Giphy.xcodeproj">
+               BlueprintName = "Puppy Blaster"
+               ReferencedContainer = "container:Puppy Blaster.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9B8181C8188DCE76001A4017"
                BuildableName = "GiphyTests.xctest"
-               BlueprintName = "GiphyTests"
-               ReferencedContainer = "container:Giphy.xcodeproj">
+               BlueprintName = "Puppy BlasterTests"
+               ReferencedContainer = "container:Puppy Blaster.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B8181A7188DCE76001A4017"
             BuildableName = "Giphy.app"
-            BlueprintName = "Giphy"
-            ReferencedContainer = "container:Giphy.xcodeproj">
+            BlueprintName = "Puppy Blaster"
+            ReferencedContainer = "container:Puppy Blaster.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B8181A7188DCE76001A4017"
             BuildableName = "Giphy.app"
-            BlueprintName = "Giphy"
-            ReferencedContainer = "container:Giphy.xcodeproj">
+            BlueprintName = "Puppy Blaster"
+            ReferencedContainer = "container:Puppy Blaster.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B8181A7188DCE76001A4017"
             BuildableName = "Giphy.app"
-            BlueprintName = "Giphy"
-            ReferencedContainer = "container:Giphy.xcodeproj">
+            BlueprintName = "Puppy Blaster"
+            ReferencedContainer = "container:Puppy Blaster.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

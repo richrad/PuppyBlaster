@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B56F112188DD6970008FC8C /* NSString+Better.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56F111188DD6970008FC8C /* NSString+Better.m */; };
+		9B56F119188DDA580008FC8C /* LDCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56F118188DDA580008FC8C /* LDCollectionViewController.m */; };
+		9B56F11C188DE6BA0008FC8C /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B56F11B188DE6BA0008FC8C /* UIImage+animatedGIF.m */; };
+		9B56F11E188DE6CA0008FC8C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B56F11D188DE6CA0008FC8C /* ImageIO.framework */; };
 		9B8181AC188DCE76001A4017 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8181AB188DCE76001A4017 /* Foundation.framework */; };
 		9B8181AE188DCE76001A4017 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8181AD188DCE76001A4017 /* CoreGraphics.framework */; };
 		9B8181B0188DCE76001A4017 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8181AF188DCE76001A4017 /* UIKit.framework */; };
@@ -14,13 +18,22 @@
 		9B8181B8188DCE76001A4017 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8181B7188DCE76001A4017 /* main.m */; };
 		9B8181BC188DCE76001A4017 /* LDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8181BB188DCE76001A4017 /* LDAppDelegate.m */; };
 		9B8181BF188DCE76001A4017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B8181BD188DCE76001A4017 /* Main.storyboard */; };
-		9B8181C2188DCE76001A4017 /* LDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8181C1188DCE76001A4017 /* LDViewController.m */; };
 		9B8181C4188DCE76001A4017 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B8181C3188DCE76001A4017 /* Images.xcassets */; };
 		9B8181CB188DCE76001A4017 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8181CA188DCE76001A4017 /* XCTest.framework */; };
 		9B8181CC188DCE76001A4017 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8181AB188DCE76001A4017 /* Foundation.framework */; };
 		9B8181CD188DCE76001A4017 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8181AF188DCE76001A4017 /* UIKit.framework */; };
 		9B8181D5188DCE76001A4017 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B8181D3188DCE76001A4017 /* InfoPlist.strings */; };
 		9B8181D7188DCE76001A4017 /* GiphyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8181D6188DCE76001A4017 /* GiphyTests.m */; };
+		9B8181E4188DCED5001A4017 /* GiphyCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8181E3188DCED5001A4017 /* GiphyCore.m */; };
+		9B8181FB188DCF16001A4017 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8181E9188DCF16001A4017 /* AFHTTPRequestOperation.m */; };
+		9B8181FC188DCF16001A4017 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8181EB188DCF16001A4017 /* AFHTTPRequestOperationManager.m */; };
+		9B8181FD188DCF16001A4017 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8181ED188DCF16001A4017 /* AFHTTPSessionManager.m */; };
+		9B8181FE188DCF16001A4017 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8181F0188DCF16001A4017 /* AFNetworkReachabilityManager.m */; };
+		9B8181FF188DCF16001A4017 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8181F2188DCF16001A4017 /* AFSecurityPolicy.m */; };
+		9B818200188DCF16001A4017 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8181F4188DCF16001A4017 /* AFURLConnectionOperation.m */; };
+		9B818201188DCF16001A4017 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8181F6188DCF16001A4017 /* AFURLRequestSerialization.m */; };
+		9B818202188DCF16001A4017 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8181F8188DCF16001A4017 /* AFURLResponseSerialization.m */; };
+		9B818203188DCF16001A4017 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8181FA188DCF16001A4017 /* AFURLSessionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,25 +47,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9B8181A8188DCE76001A4017 /* Giphy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giphy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B56F110188DD6970008FC8C /* NSString+Better.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Better.h"; sourceTree = "<group>"; };
+		9B56F111188DD6970008FC8C /* NSString+Better.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Better.m"; sourceTree = "<group>"; };
+		9B56F117188DDA580008FC8C /* LDCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCollectionViewController.h; sourceTree = "<group>"; };
+		9B56F118188DDA580008FC8C /* LDCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCollectionViewController.m; sourceTree = "<group>"; };
+		9B56F11A188DE6BA0008FC8C /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		9B56F11B188DE6BA0008FC8C /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		9B56F11D188DE6CA0008FC8C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		9B8181A8188DCE76001A4017 /* Puppy Blaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puppy Blaster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8181AB188DCE76001A4017 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B8181AD188DCE76001A4017 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9B8181AF188DCE76001A4017 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9B8181B3188DCE76001A4017 /* Giphy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Giphy-Info.plist"; sourceTree = "<group>"; };
+		9B8181B3188DCE76001A4017 /* Puppy Blaster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Puppy Blaster-Info.plist"; sourceTree = "<group>"; };
 		9B8181B5188DCE76001A4017 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B8181B7188DCE76001A4017 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B8181B9188DCE76001A4017 /* Giphy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Giphy-Prefix.pch"; sourceTree = "<group>"; };
 		9B8181BA188DCE76001A4017 /* LDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDAppDelegate.h; sourceTree = "<group>"; };
 		9B8181BB188DCE76001A4017 /* LDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDAppDelegate.m; sourceTree = "<group>"; };
 		9B8181BE188DCE76001A4017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9B8181C0188DCE76001A4017 /* LDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDViewController.h; sourceTree = "<group>"; };
-		9B8181C1188DCE76001A4017 /* LDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDViewController.m; sourceTree = "<group>"; };
 		9B8181C3188DCE76001A4017 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9B8181C9188DCE76001A4017 /* GiphyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiphyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B8181C9188DCE76001A4017 /* Puppy BlasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Puppy BlasterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8181CA188DCE76001A4017 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		9B8181D2188DCE76001A4017 /* GiphyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GiphyTests-Info.plist"; sourceTree = "<group>"; };
+		9B8181D2188DCE76001A4017 /* Puppy BlasterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Puppy BlasterTests-Info.plist"; sourceTree = "<group>"; };
 		9B8181D4188DCE76001A4017 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B8181D6188DCE76001A4017 /* GiphyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiphyTests.m; sourceTree = "<group>"; };
+		9B8181E2188DCED5001A4017 /* GiphyCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiphyCore.h; sourceTree = "<group>"; };
+		9B8181E3188DCED5001A4017 /* GiphyCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiphyCore.m; sourceTree = "<group>"; };
+		9B8181E8188DCF16001A4017 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		9B8181E9188DCF16001A4017 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		9B8181EA188DCF16001A4017 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		9B8181EB188DCF16001A4017 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		9B8181EC188DCF16001A4017 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		9B8181ED188DCF16001A4017 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		9B8181EE188DCF16001A4017 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		9B8181EF188DCF16001A4017 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		9B8181F0188DCF16001A4017 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		9B8181F1188DCF16001A4017 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		9B8181F2188DCF16001A4017 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		9B8181F3188DCF16001A4017 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		9B8181F4188DCF16001A4017 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		9B8181F5188DCF16001A4017 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		9B8181F6188DCF16001A4017 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		9B8181F7188DCF16001A4017 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		9B8181F8188DCF16001A4017 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		9B8181F9188DCF16001A4017 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		9B8181FA188DCF16001A4017 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B56F11E188DE6CA0008FC8C /* ImageIO.framework in Frameworks */,
 				9B8181AE188DCE76001A4017 /* CoreGraphics.framework in Frameworks */,
 				9B8181B0188DCE76001A4017 /* UIKit.framework in Frameworks */,
 				9B8181AC188DCE76001A4017 /* Foundation.framework in Frameworks */,
@@ -79,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B56F113188DD69C0008FC8C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9B56F110188DD6970008FC8C /* NSString+Better.h */,
+				9B56F111188DD6970008FC8C /* NSString+Better.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		9B81819F188DCE76001A4017 = {
 			isa = PBXGroup;
 			children = (
@@ -92,8 +141,8 @@
 		9B8181A9188DCE76001A4017 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B8181A8188DCE76001A4017 /* Giphy.app */,
-				9B8181C9188DCE76001A4017 /* GiphyTests.xctest */,
+				9B8181A8188DCE76001A4017 /* Puppy Blaster.app */,
+				9B8181C9188DCE76001A4017 /* Puppy BlasterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +150,7 @@
 		9B8181AA188DCE76001A4017 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B56F11D188DE6CA0008FC8C /* ImageIO.framework */,
 				9B8181AB188DCE76001A4017 /* Foundation.framework */,
 				9B8181AD188DCE76001A4017 /* CoreGraphics.framework */,
 				9B8181AF188DCE76001A4017 /* UIKit.framework */,
@@ -112,12 +162,13 @@
 		9B8181B1188DCE76001A4017 /* Giphy */ = {
 			isa = PBXGroup;
 			children = (
-				9B8181BA188DCE76001A4017 /* LDAppDelegate.h */,
-				9B8181BB188DCE76001A4017 /* LDAppDelegate.m */,
-				9B8181BD188DCE76001A4017 /* Main.storyboard */,
-				9B8181C0188DCE76001A4017 /* LDViewController.h */,
-				9B8181C1188DCE76001A4017 /* LDViewController.m */,
+				9B56F113188DD69C0008FC8C /* Categories */,
+				9B8181E6188DCEF8001A4017 /* Vendor */,
+				9B8181E5188DCED9001A4017 /* GiphyCore */,
+				9B8181E1188DCE8B001A4017 /* App Delegate */,
+				9B8181E0188DCE84001A4017 /* View Controllers */,
 				9B8181C3188DCE76001A4017 /* Images.xcassets */,
+				9B8181BD188DCE76001A4017 /* Main.storyboard */,
 				9B8181B2188DCE76001A4017 /* Supporting Files */,
 			);
 			path = Giphy;
@@ -126,7 +177,7 @@
 		9B8181B2188DCE76001A4017 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9B8181B3188DCE76001A4017 /* Giphy-Info.plist */,
+				9B8181B3188DCE76001A4017 /* Puppy Blaster-Info.plist */,
 				9B8181B4188DCE76001A4017 /* InfoPlist.strings */,
 				9B8181B7188DCE76001A4017 /* main.m */,
 				9B8181B9188DCE76001A4017 /* Giphy-Prefix.pch */,
@@ -146,18 +197,81 @@
 		9B8181D1188DCE76001A4017 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9B8181D2188DCE76001A4017 /* GiphyTests-Info.plist */,
+				9B8181D2188DCE76001A4017 /* Puppy BlasterTests-Info.plist */,
 				9B8181D3188DCE76001A4017 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9B8181E0188DCE84001A4017 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B56F117188DDA580008FC8C /* LDCollectionViewController.h */,
+				9B56F118188DDA580008FC8C /* LDCollectionViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9B8181E1188DCE8B001A4017 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9B8181BA188DCE76001A4017 /* LDAppDelegate.h */,
+				9B8181BB188DCE76001A4017 /* LDAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		9B8181E5188DCED9001A4017 /* GiphyCore */ = {
+			isa = PBXGroup;
+			children = (
+				9B8181E2188DCED5001A4017 /* GiphyCore.h */,
+				9B8181E3188DCED5001A4017 /* GiphyCore.m */,
+			);
+			name = GiphyCore;
+			sourceTree = "<group>";
+		};
+		9B8181E6188DCEF8001A4017 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				9B56F11A188DE6BA0008FC8C /* UIImage+animatedGIF.h */,
+				9B56F11B188DE6BA0008FC8C /* UIImage+animatedGIF.m */,
+				9B8181E7188DCF16001A4017 /* AFNetworking */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		9B8181E7188DCF16001A4017 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				9B8181E8188DCF16001A4017 /* AFHTTPRequestOperation.h */,
+				9B8181E9188DCF16001A4017 /* AFHTTPRequestOperation.m */,
+				9B8181EA188DCF16001A4017 /* AFHTTPRequestOperationManager.h */,
+				9B8181EB188DCF16001A4017 /* AFHTTPRequestOperationManager.m */,
+				9B8181EC188DCF16001A4017 /* AFHTTPSessionManager.h */,
+				9B8181ED188DCF16001A4017 /* AFHTTPSessionManager.m */,
+				9B8181EE188DCF16001A4017 /* AFNetworking.h */,
+				9B8181EF188DCF16001A4017 /* AFNetworkReachabilityManager.h */,
+				9B8181F0188DCF16001A4017 /* AFNetworkReachabilityManager.m */,
+				9B8181F1188DCF16001A4017 /* AFSecurityPolicy.h */,
+				9B8181F2188DCF16001A4017 /* AFSecurityPolicy.m */,
+				9B8181F3188DCF16001A4017 /* AFURLConnectionOperation.h */,
+				9B8181F4188DCF16001A4017 /* AFURLConnectionOperation.m */,
+				9B8181F5188DCF16001A4017 /* AFURLRequestSerialization.h */,
+				9B8181F6188DCF16001A4017 /* AFURLRequestSerialization.m */,
+				9B8181F7188DCF16001A4017 /* AFURLResponseSerialization.h */,
+				9B8181F8188DCF16001A4017 /* AFURLResponseSerialization.m */,
+				9B8181F9188DCF16001A4017 /* AFURLSessionManager.h */,
+				9B8181FA188DCF16001A4017 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B8181A7188DCE76001A4017 /* Giphy */ = {
+		9B8181A7188DCE76001A4017 /* Puppy Blaster */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B8181DA188DCE76001A4017 /* Build configuration list for PBXNativeTarget "Giphy" */;
+			buildConfigurationList = 9B8181DA188DCE76001A4017 /* Build configuration list for PBXNativeTarget "Puppy Blaster" */;
 			buildPhases = (
 				9B8181A4188DCE76001A4017 /* Sources */,
 				9B8181A5188DCE76001A4017 /* Frameworks */,
@@ -167,14 +281,14 @@
 			);
 			dependencies = (
 			);
-			name = Giphy;
+			name = "Puppy Blaster";
 			productName = Giphy;
-			productReference = 9B8181A8188DCE76001A4017 /* Giphy.app */;
+			productReference = 9B8181A8188DCE76001A4017 /* Puppy Blaster.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9B8181C8188DCE76001A4017 /* GiphyTests */ = {
+		9B8181C8188DCE76001A4017 /* Puppy BlasterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B8181DD188DCE76001A4017 /* Build configuration list for PBXNativeTarget "GiphyTests" */;
+			buildConfigurationList = 9B8181DD188DCE76001A4017 /* Build configuration list for PBXNativeTarget "Puppy BlasterTests" */;
 			buildPhases = (
 				9B8181C5188DCE76001A4017 /* Sources */,
 				9B8181C6188DCE76001A4017 /* Frameworks */,
@@ -185,9 +299,9 @@
 			dependencies = (
 				9B8181CF188DCE76001A4017 /* PBXTargetDependency */,
 			);
-			name = GiphyTests;
+			name = "Puppy BlasterTests";
 			productName = GiphyTests;
-			productReference = 9B8181C9188DCE76001A4017 /* GiphyTests.xctest */;
+			productReference = 9B8181C9188DCE76001A4017 /* Puppy BlasterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -205,7 +319,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9B8181A3188DCE76001A4017 /* Build configuration list for PBXProject "Giphy" */;
+			buildConfigurationList = 9B8181A3188DCE76001A4017 /* Build configuration list for PBXProject "Puppy Blaster" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -218,8 +332,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B8181A7188DCE76001A4017 /* Giphy */,
-				9B8181C8188DCE76001A4017 /* GiphyTests */,
+				9B8181A7188DCE76001A4017 /* Puppy Blaster */,
+				9B8181C8188DCE76001A4017 /* Puppy BlasterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,9 +364,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B8181E4188DCED5001A4017 /* GiphyCore.m in Sources */,
+				9B8181FF188DCF16001A4017 /* AFSecurityPolicy.m in Sources */,
 				9B8181BC188DCE76001A4017 /* LDAppDelegate.m in Sources */,
+				9B8181FC188DCF16001A4017 /* AFHTTPRequestOperationManager.m in Sources */,
+				9B818200188DCF16001A4017 /* AFURLConnectionOperation.m in Sources */,
+				9B8181FB188DCF16001A4017 /* AFHTTPRequestOperation.m in Sources */,
 				9B8181B8188DCE76001A4017 /* main.m in Sources */,
-				9B8181C2188DCE76001A4017 /* LDViewController.m in Sources */,
+				9B818201188DCF16001A4017 /* AFURLRequestSerialization.m in Sources */,
+				9B8181FD188DCF16001A4017 /* AFHTTPSessionManager.m in Sources */,
+				9B8181FE188DCF16001A4017 /* AFNetworkReachabilityManager.m in Sources */,
+				9B56F119188DDA580008FC8C /* LDCollectionViewController.m in Sources */,
+				9B818202188DCF16001A4017 /* AFURLResponseSerialization.m in Sources */,
+				9B818203188DCF16001A4017 /* AFURLSessionManager.m in Sources */,
+				9B56F11C188DE6BA0008FC8C /* UIImage+animatedGIF.m in Sources */,
+				9B56F112188DD6970008FC8C /* NSString+Better.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +395,7 @@
 /* Begin PBXTargetDependency section */
 		9B8181CF188DCE76001A4017 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9B8181A7188DCE76001A4017 /* Giphy */;
+			target = 9B8181A7188DCE76001A4017 /* Puppy Blaster */;
 			targetProxy = 9B8181CE188DCE76001A4017 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -380,9 +506,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Giphy/Giphy-Prefix.pch";
-				INFOPLIST_FILE = "Giphy/Giphy-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Giphy/Puppy Blaster-Prefix.pch";
+				INFOPLIST_FILE = "Giphy/Puppy Blaster-Info.plist";
+				PRODUCT_NAME = "Puppy Blaster";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,9 +519,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Giphy/Giphy-Prefix.pch";
-				INFOPLIST_FILE = "Giphy/Giphy-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Giphy/Puppy Blaster-Prefix.pch";
+				INFOPLIST_FILE = "Giphy/Puppy Blaster-Info.plist";
+				PRODUCT_NAME = "Puppy Blaster";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -416,8 +542,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "GiphyTests/GiphyTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "GiphyTests/Puppy BlasterTests-Info.plist";
+				PRODUCT_NAME = "Puppy BlasterTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -435,8 +561,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Giphy/Giphy-Prefix.pch";
-				INFOPLIST_FILE = "GiphyTests/GiphyTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "GiphyTests/Puppy BlasterTests-Info.plist";
+				PRODUCT_NAME = "Puppy BlasterTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -445,7 +571,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B8181A3188DCE76001A4017 /* Build configuration list for PBXProject "Giphy" */ = {
+		9B8181A3188DCE76001A4017 /* Build configuration list for PBXProject "Puppy Blaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B8181D8188DCE76001A4017 /* Debug */,
@@ -454,21 +580,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B8181DA188DCE76001A4017 /* Build configuration list for PBXNativeTarget "Giphy" */ = {
+		9B8181DA188DCE76001A4017 /* Build configuration list for PBXNativeTarget "Puppy Blaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B8181DB188DCE76001A4017 /* Debug */,
 				9B8181DC188DCE76001A4017 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		9B8181DD188DCE76001A4017 /* Build configuration list for PBXNativeTarget "GiphyTests" */ = {
+		9B8181DD188DCE76001A4017 /* Build configuration list for PBXNativeTarget "Puppy BlasterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B8181DE188DCE76001A4017 /* Debug */,
 				9B8181DF188DCE76001A4017 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
